@@ -1,16 +1,18 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
-import Sobre from "./pages/Sobre";
+import Usuarios from "./pages/Usuarios";
+import Contador from "./pages/Contador";
 
 function App() {
   return (
     <BrowserRouter>
       <nav>
-        <Link to="/">Home</Link> | <Link to="/sobre">Sobre</Link>
+        <Link to="/">Home</Link> | <Link to="/usuarios">Usuarios</Link> | <Link to="/contador">Contador</Link>
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/sobre" element={<Sobre />} />
+        <Route path="/usuarios" element={<Usuarios />} />
+        <Route path="/contador" element={<Contador />} />
       </Routes>
     </BrowserRouter>
   )
