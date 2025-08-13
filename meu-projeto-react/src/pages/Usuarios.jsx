@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import '../styles/usuarios.css'; 
 
 function Usuarios() {
     const [usuarios, setUsuarios] = useState([]);
@@ -11,7 +12,7 @@ function Usuarios() {
 
 
     return(
-        <div>
+        <div className='usuarios'>
             <h2>Lista de usuarios</h2>
             <ul>
                 {usuarios.map((usuario) => (
